@@ -1,1 +1,6 @@
-# jnikolo.github.io
+# Jair Nicolas Ruiz
+## My Portfolio
+
+## Skills
+
+## Projects
