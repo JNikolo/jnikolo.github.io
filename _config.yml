@@ -3,3 +3,24 @@ description: Website serving as portfolio
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+# Social media settings
+social:
+  email: "jruizm13@outlook.com"
+  github: "https://github.com/JNikolo"
+  linkedin: "https://www.linkedin.com/in/jair-ruiz-211889267/"
+
+# Navigation links
+nav_links:
+  - name: "Home"
+    link: "/"
+  - name: "About"
+    link: "/about/"
+  - name: "Projects"
+    link: "/projects/"
+  - name: "Contact"
+    link: "/contact/"
+
+# Other settings
+paginate: 5
+paginate_path: "/blog/page:num/"
