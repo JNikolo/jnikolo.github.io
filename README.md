@@ -5,9 +5,10 @@
 - [Contact](#contact)
 
 ## Home
-| Me | :) |
-|---------|--------|
-|(insert photo here) | My name is Jair N. Ruiz. I'm bla bla bla....... Fun fact about me is... |
+<div style="display:flex; content-align: left">
+  <img>
+  <p>Hi my name is</p>
+</div>
 
 ## Resume
 Access my resume [here]()
