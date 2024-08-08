@@ -1,25 +1,21 @@
-# Jair N. Ruiz - Portfolio
+# Hi, I'm Jair Ruiz.  Full-stack developer in progress!🚀
+
 - [Home](#home)
-- [About](#about)
-- [Projects](#projects)
+- [Resume](#resume)
 - [Contact](#contact)
 
 ## Home
+| Me | :) |
+|---------|--------|
+|(insert photo here) | My name is Jair N. Ruiz. I'm bla bla bla....... Fun fact about me is... |
 
-The homepage includes a hero section with a brief introduction and call-to-action buttons.
-
-## About
-
-This section provides a detailed bio, including education, professional experience, and skills.
-
-## Projects
-
-Showcases key projects with descriptions, images, and links to live demos or GitHub repositories.
-
-## Blog
-
-Lists recent blog posts with excerpts and links to full articles.
+## Resume
+Access my resume [here]()
 
 ## Contact
 
 Includes a contact form and links to social media profiles.
+
+- [LinkedIn]()
+- [GitHub]()
+- [Instagram]()
