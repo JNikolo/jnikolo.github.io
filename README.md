@@ -6,7 +6,7 @@
 
 ## Home
 <div style="display:flex; content-align: left">
-  ![WhatsApp Image 2024-08-07 at 23 12 20_4e972945](https://github.com/user-attachments/assets/f60b23d2-251a-4f18-a6ad-5788a2e4afd2)
+  <img alt="Your Image" style="margin-right: 20px; width: 100px; height: 100px; border-radius: 50%;">
   <p>Hi my name is</p>
 </div>
 
@@ -17,6 +17,6 @@ Access my resume [here]()
 
 Includes a contact form and links to social media profiles.
 
-- [LinkedIn]()
-- [GitHub]()
-- [Instagram]()
+- [LinkedIn](https://www.linkedin.com/in/jair-ruiz-211889267/)
+- [GitHub](https://github.com/JNikolo)
+- [Instagram](https://www.instagram.com/jair_ruiz03)
