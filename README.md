@@ -6,7 +6,7 @@
 
 ## Home
 <div style="display:flex; content-align: left">
-  <img>
+  ![WhatsApp Image 2024-08-07 at 23 12 20_4e972945](https://github.com/user-attachments/assets/f60b23d2-251a-4f18-a6ad-5788a2e4afd2)
   <p>Hi my name is</p>
 </div>
 
