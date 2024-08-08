@@ -1,17 +1,16 @@
-# Hi, I'm Jair Ruiz.  Full-stack developer in progress!🚀
+# Hi, I'm Jair Ruiz. Full-stack developer in progress!🚀
 
 - [Home](#home)
 - [Resume](#resume)
 - [Contact](#contact)
 
 ## Home
-<div style="display:flex; content-align: left">
-  <img alt="Your Image" style="margin-right: 20px; width: 100px; height: 100px; border-radius: 50%;">
-  <p>Hi my name is</p>
-</div>
+
+![Profile Pic](/assets/profile-pic.jpg)
+Hi, my name is Jair Ruiz. I'm a senior undegrad. I have a strong background in [Key Skills or Technologies]. Over the years, I have worked on various projects that involved [Brief Description of Projects or Work Experience]. My passion lies in [Your Passion or Interest Related to Profession], and I strive to [Your Professional Goal or Mission].
 
 ## Resume
-Access my resume [here]()
+Access my resume [here](https://www.dropbox.com/scl/fi/kly8gmgd5ryxou80vmw3f/jair-ruiz-resume.pdf?rlkey=29ekkm3ytt0gnhkew06lhagar&st=l7kry4zr&dl=0)
 
 ## Contact
 
