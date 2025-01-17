@@ -1,23 +1,36 @@
-# Hi, I'm Jair Ruiz. Full-stack developer in progress!🚀
-## Table of Contents
-- [Home](#home)
-- [Resume](#resume)
-- [Contact](#contact)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Home
-<div style="display:flex; flex-direction: row; justify-content:space-around;">
-<img style="width: 150px; height: auto; margin-right:20px;" src="/assets/profile-pic.jpg" alt="My profile picture">
-<p>Hi, my name is Jair Ruiz. I'm a senior Computer Science student, aspiring to be a Full-stack developer. I have a strong background in backend development using Python, and some experience with Node JS for frontend. I have worked in projects related to Retrieval Augmented Generation (RAG), APIs and web scrapping. My passion lies in creating meaningful applications for the users, and I strive to be a succesfull Full-stack engineer.</p>
-</div>
+## Getting Started
 
-Fun fact! I used to be a [numismatist](https://www.vocabulary.com/dictionary/numismatist), and completed the National Park Quarter Collection 🤓!
+First, run the development server:
 
-## Resume
-For more details in my background check my resume [here](https://www.dropbox.com/scl/fi/kly8gmgd5ryxou80vmw3f/jair-ruiz-resume.pdf?rlkey=29ekkm3ytt0gnhkew06lhagar&st=l7kry4zr&dl=0)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Contact
-Please don't hesitate to contact me through social media, and don't forget to check my GitHub profile!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [LinkedIn](https://www.linkedin.com/in/jair-ruiz-211889267/)
-- [GitHub](https://github.com/JNikolo)
-- [Instagram](https://www.instagram.com/jair_ruiz03)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
