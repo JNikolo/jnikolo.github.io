@@ -8,7 +8,7 @@ export function Navbar() {
   const { isDark, toggle, mounted } = useDarkMode();
 
   return (
-    <nav className="w-full px-4 py-4">
+    <nav className="sticky top-0 z-50 w-full px-4 py-4 bg-night/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         {/* Logo/Brand - could be added here in the future */}
         <div className="hidden sm:block sm:w-1/3"></div>

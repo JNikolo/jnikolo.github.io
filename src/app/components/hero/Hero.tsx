@@ -6,8 +6,8 @@ import { TiDocumentText } from "react-icons/ti";
 
 export function Hero() {
   return (
-    <div className="relative min-h-screen">
-      <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32 relative z-10">
+    <section id="home" className="relative min-h-screen flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32 relative z-10 w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
           {/* Main Content */}
           <div className="space-y-6 w-full lg:w-1/2 text-center lg:text-left">
@@ -74,6 +74,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

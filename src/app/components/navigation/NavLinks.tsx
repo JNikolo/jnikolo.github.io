@@ -1,17 +1,31 @@
-import Link from "next/link";
-
 export function NavLinks() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="flex items-center justify-center gap-4 sm:gap-6 text-sm sm:text-base">
-      <Link href="/" className="hover:text-emerald transition-colors">
+      <button
+        onClick={() => scrollToSection("home")}
+        className="hover:text-emerald transition-colors"
+      >
         Home
-      </Link>
-      <Link href="/about" className="hover:text-emerald transition-colors">
+      </button>
+      <button
+        onClick={() => scrollToSection("experience")}
+        className="hover:text-emerald transition-colors"
+      >
         Experience
-      </Link>
-      <Link href="/projects" className="hover:text-emerald transition-colors">
+      </button>
+      <button
+        onClick={() => scrollToSection("projects")}
+        className="hover:text-emerald transition-colors"
+      >
         Projects
-      </Link>
+      </button>
     </div>
   );
 }
