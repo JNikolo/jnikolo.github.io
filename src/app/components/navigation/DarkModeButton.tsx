@@ -1,14 +1,17 @@
 "use client";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import { useDarkMode } from "../../hooks/useDarkMode";
 
 type DarkModeButtonProps = {
   onToggle: () => void;
+  isDark: boolean;
+  mounted: boolean;
 };
 
-export function DarkModeButton({ onToggle }: DarkModeButtonProps) {
-  const { isDark, mounted } = useDarkMode();
-
+export function DarkModeButton({
+  onToggle,
+  isDark,
+  mounted,
+}: DarkModeButtonProps) {
   // Avoid hydration mismatch by not rendering until mounted
   if (!mounted) {
     return (

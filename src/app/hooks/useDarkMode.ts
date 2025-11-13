@@ -7,16 +7,13 @@ export function useDarkMode() {
 
   useEffect(() => {
     setMounted(true);
-    // Check localStorage or system preference
+    // Check localStorage or default to dark mode
     const stored = localStorage.getItem("darkMode");
     if (stored !== null) {
       setIsDark(stored === "true");
     } else {
-      // Default to dark mode based on system preference
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      setIsDark(prefersDark);
+      // Default to dark mode
+      setIsDark(true);
     }
   }, []);
 
