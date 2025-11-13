@@ -2,9 +2,10 @@
 import { NavLinks } from "./NavLinks";
 import { DarkModeButton } from "./DarkModeButton";
 import { LanguageDropdown } from "./LanguageDropdown";
+import { useDarkMode } from "../../hooks/useDarkMode";
 
 export function Navbar() {
-  const handleDarkModeToggle = () => {};
+  const { toggle } = useDarkMode();
 
   return (
     <nav className="grid grid-cols-3 gap-3 p-4">
@@ -14,7 +15,7 @@ export function Navbar() {
       <div className="col-start-3 flex items-center justify-end">
         <LanguageDropdown selectedLanguage="en" onLanguageChange={() => {}} />
 
-        <DarkModeButton onToggle={handleDarkModeToggle} />
+        <DarkModeButton onToggle={toggle} />
       </div>
     </nav>
   );
