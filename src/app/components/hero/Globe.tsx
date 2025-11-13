@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { LocationInfo } from "./LocationInfo";
 
 const Globe = () => {
@@ -12,22 +12,21 @@ const Globe = () => {
   useEffect(() => {
     if (!containerRef.current) return;
 
+    const container = containerRef.current;
+
     // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75,
-      containerRef.current.clientWidth / containerRef.current.clientHeight,
+      container.clientWidth / container.clientHeight,
       0.1,
       1000
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true });
 
-    renderer.setSize(
-      containerRef.current.clientWidth,
-      containerRef.current.clientHeight
-    );
+    renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setClearColor(0x0a0a0a, 0);
-    containerRef.current.appendChild(renderer.domElement);
+    container.appendChild(renderer.domElement);
 
     // Earth
     const earthGeometry = new THREE.SphereGeometry(5, 32, 32);
@@ -84,8 +83,7 @@ const Globe = () => {
 
     const markers = [marker1, marker2];
     function onPointerMove(event: PointerEvent) {
-      if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
+      const rect = container.getBoundingClientRect();
       // calculate pointer position in normalized device coordinates
       // (-1 to +1) for both components
 
@@ -108,8 +106,8 @@ const Globe = () => {
         vector.project(camera);
 
         // Convert from normalized device coordinates to screen coordinates
-        const x = ((vector.x + 1) / 2) * containerRef.current.clientWidth;
-        const y = (-(vector.y - 1) / 2) * containerRef.current.clientHeight;
+        const x = ((vector.x + 1) / 2) * container.clientWidth;
+        const y = (-(vector.y - 1) / 2) * container.clientHeight;
 
         // Adjust the tooltip position slightly above the marker
         setTooltipPosition({ x, y: y - 20 });
@@ -132,8 +130,8 @@ const Globe = () => {
     // Cleanup
     return () => {
       window.removeEventListener("pointermove", onPointerMove);
-      if (containerRef.current) {
-        containerRef.current.removeChild(renderer.domElement);
+      if (container) {
+        container.removeChild(renderer.domElement);
       }
     };
   }, []);
@@ -154,8 +152,11 @@ const Globe = () => {
   }
 
   return (
-    <div className="relative">
-      <div ref={containerRef} className={"w-auto h-[300px]"} />
+    <div className="relative w-full">
+      <div
+        ref={containerRef}
+        className="w-full h-[250px] sm:h-[350px] lg:h-[450px]"
+      />
 
       {/* Display Tooltip if a marker is hovered */}
       {hoveredMarker && (
