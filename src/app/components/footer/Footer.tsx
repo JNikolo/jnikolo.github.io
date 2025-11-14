@@ -1,5 +1,5 @@
 "use client";
-import { TiSocialLinkedin, TiSocialGithub } from "react-icons/ti";
+import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiMail, HiArrowUp } from "react-icons/hi";
 
 export function Footer() {
@@ -75,19 +75,28 @@ export function Footer() {
                     href="https://www.linkedin.com/in/jair-ruiz-211889267/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl text-gray-400 hover:text-emerald transition-colors"
+                    className="text-2xl text-[#126bc4] transition-colors"
                     aria-label="LinkedIn Profile"
                   >
-                    <TiSocialLinkedin />
+                    <FaLinkedinIn />
                   </a>
                   <a
                     href="https://github.com/JNikolo"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl text-gray-400 hover:text-emerald transition-colors"
+                    className="text-2xl transition-colors"
                     aria-label="GitHub Profile"
                   >
-                    <TiSocialGithub />
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/jair_ruiz03/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-2xl text-[#fc09d1] transition-colors"
+                    aria-label="Instagram Profile"
+                  >
+                    <FaInstagram />
                   </a>
                 </div>
               </div>
