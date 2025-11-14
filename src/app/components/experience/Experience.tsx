@@ -1,4 +1,6 @@
 "use client";
+import { Button } from "../ui/Button";
+import { TiSocialLinkedin } from "react-icons/ti";
 
 interface ExperienceItemProps {
   title: string;
@@ -113,6 +115,24 @@ export function Experience() {
             {experiences.map((exp, index) => (
               <ExperienceItem key={index} {...exp} />
             ))}
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-12 pt-8 border-t border-gray-700">
+            <p className="text-gray-400 mb-6">
+              Want to know more about my professional experience?
+            </p>
+            <Button
+              variant="primary"
+              size="lg"
+              href="https://www.linkedin.com/in/jair-ruiz-211889267/"
+              target="_blank"
+              rel="noopener noreferrer"
+              icon={<TiSocialLinkedin />}
+              iconPosition="right"
+            >
+              Connect on LinkedIn
+            </Button>
           </div>
         </div>
       </div>

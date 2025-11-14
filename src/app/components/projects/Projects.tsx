@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { Button } from "../ui/Button";
 
 interface ProjectCardProps {
   title: string;
@@ -197,6 +198,21 @@ export function Projects() {
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
+          </div>
+
+          {/* View More CTA */}
+          <div className="text-center mt-12">
+            <Button
+              variant="outline"
+              size="lg"
+              href="https://github.com/JNikolo"
+              target="_blank"
+              rel="noopener noreferrer"
+              icon={<FiGithub />}
+              iconPosition="right"
+            >
+              View More on GitHub
+            </Button>
           </div>
         </div>
       </div>

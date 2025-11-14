@@ -3,6 +3,8 @@ import Globe from "./Globe";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TiSocialGithub } from "react-icons/ti";
 import { TiDocumentText } from "react-icons/ti";
+import { HiDownload, HiMail } from "react-icons/hi";
+import { Button } from "../ui/Button";
 
 export function Hero() {
   return (
@@ -31,16 +33,31 @@ export function Hero() {
               problems. When I&apos;m not coding, I enjoy playing video games
               and traveling.
             </p>
-            <div className="flex flex-col items-center lg:items-start space-y-4 pt-4">
-              <p className="text-xl sm:text-2xl text-white font-bold">
-                Let&apos;s get in touch!
-              </p>
-              <a
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              <Button
+                variant="primary"
+                size="lg"
                 href="mailto:jruizm13@outlook.com"
-                className="text-base sm:text-lg text-emerald hover:underline"
+                icon={<HiMail />}
+                iconPosition="left"
               >
-                jruizm13@outlook.com
-              </a>
+                Get In Touch
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                href="#"
+                icon={<HiDownload />}
+                iconPosition="right"
+              >
+                Download Resume
+              </Button>
+            </div>
+
+            <div className="flex flex-col items-center lg:items-start space-y-4 pt-8">
+              <p className="text-lg text-gray-400">Connect with me</p>
               <div className="flex space-x-4 sm:space-x-6">
                 <a
                   href="https://www.linkedin.com/in/jair-ruiz-211889267/"
