@@ -31,7 +31,7 @@ export function Hero() {
               <p className="text-base sm:text-lg lg:text-xl text-gray-300 mx-auto lg:mx-0 max-w-2xl">
                 Full-stack Developer |{" "}
                 <span className="text-emerald drop-shadow-[0_0_10px_rgba(24,189,118,0.5)]">
-                  React, Next.js, Node.js, and Python
+                  React, Next.js, Node.js, Python
                 </span>
                 <br />
                 <span className="font-bold">
@@ -42,9 +42,9 @@ export function Hero() {
               {/* Condensed About */}
               <div className="p-2 mx-auto lg:mx-0 max-w-2xl">
                 <p className="text-gray-300 leading-relaxed">
-                  I&apos;m a passionate developer who loves building innovative
-                  web applications and AI-powered solutions. Currently working
-                  as a Software Engineer Consultant at Belle Lyric Music, I
+                  I&apos;m a developer who loves building impactful web
+                  applications and AI-powered solutions. Currently working as a
+                  Software Engineer Consultant at Belle Lyric Music, I
                   specialize in creating scalable full-stack applications that
                   solve real-world problems, while drinking a lot of coffee ☕.
                   When I&apos;m not coding, you&apos;ll find me exploring the
