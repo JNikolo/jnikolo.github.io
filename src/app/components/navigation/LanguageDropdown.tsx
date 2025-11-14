@@ -45,7 +45,7 @@ export function LanguageDropdown({
   return (
     <div className="relative" ref={dropdownRef}>
       <button
-        className="flex items-center space-x-2 px-3 py-2 rounded-md hover:text-gray-300 dark:hover:bg-gray-700 dark:text-white"
+        className="flex items-center space-x-2 px-3 py-2 rounded-md hover:text-gray-300 hover:bg-gray-700 text-white"
         type="button"
         aria-expanded={isOpen}
         aria-haspopup="true"
@@ -61,12 +61,12 @@ export function LanguageDropdown({
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-gray-500 dark:bg-gray-700 ring-1 ring-black ring-opacity-5">
+        <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-gray-700 ring-1 ring-black ring-opacity-5">
           <div className="py-1" role="menu" aria-orientation="vertical">
             {LANGUAGES.map((language) => (
               <button
                 key={language.code}
-                className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white"
+                className="w-full text-left px-4 py-2 text-sm hover:bg-gray-600 text-white"
                 role="menuitem"
                 onClick={() => handleLanguageSelect(language)}
               >

@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-16 sm:py-24 bg-gradient-to-b from-night to-gray-900 dark:from-gray-900 dark:to-black"
+      className="py-16 sm:py-24 bg-gradient-to-b from-night to-gray-900"
     >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">

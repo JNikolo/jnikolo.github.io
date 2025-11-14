@@ -94,7 +94,7 @@ export function Skills() {
   }, []);
 
   return (
-    <section id="skills" className="py-16 sm:py-24 bg-night dark:bg-gray-900">
+    <section id="skills" className="py-16 sm:py-24 bg-night">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -114,7 +114,7 @@ export function Skills() {
               {coreTechnologies.map((tech, index) => (
                 <div
                   key={index}
-                  className="group relative bg-gray-900/50 dark:bg-black/50 border border-gray-800 rounded-2xl p-6 hover:border-emerald/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald/10 hover:-translate-y-1 flex flex-col items-center justify-center gap-3 aspect-square"
+                  className="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-6 hover:border-emerald/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald/10 hover:-translate-y-1 flex flex-col items-center justify-center gap-3 aspect-square"
                 >
                   {/* Icon */}
                   <div
@@ -139,8 +139,8 @@ export function Skills() {
             </h3>
             <div className="relative overflow-hidden">
               {/* Gradient Overlays */}
-              <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-night dark:from-gray-900 to-transparent z-10 pointer-events-none"></div>
-              <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-night dark:from-gray-900 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-night to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-night to-transparent z-10 pointer-events-none"></div>
 
               {/* Scrolling Container */}
               <div
@@ -153,7 +153,7 @@ export function Skills() {
                   (tech, index) => (
                     <div
                       key={index}
-                      className="group relative bg-gray-900/50 dark:bg-black/50 border border-gray-800 rounded-2xl p-6 hover:border-emerald/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald/10 flex flex-col items-center justify-center gap-3 min-w-[120px] aspect-square flex-shrink-0"
+                      className="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-6 hover:border-emerald/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald/10 flex flex-col items-center justify-center gap-3 min-w-[120px] aspect-square flex-shrink-0"
                     >
                       {/* Icon */}
                       <div

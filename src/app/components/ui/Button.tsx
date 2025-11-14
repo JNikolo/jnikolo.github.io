@@ -24,7 +24,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald focus:ring-offset-2 focus:ring-offset-night dark:focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed";
+    "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald focus:ring-offset-2 focus:ring-offset-night disabled:opacity-50 disabled:cursor-not-allowed";
 
   const variants = {
     primary:

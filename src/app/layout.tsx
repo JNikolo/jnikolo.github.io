@@ -51,9 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-night text-white dark:bg-gray-900 dark:text-gray-100 transition-colors">
-        {children}
-      </body>
+      <body className="bg-night text-white transition-colors">{children}</body>
     </html>
   );
 }

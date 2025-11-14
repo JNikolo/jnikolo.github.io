@@ -22,7 +22,7 @@ function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <div className="group relative bg-gray-800/50 dark:bg-gray-800/80 rounded-lg overflow-hidden border border-gray-700 hover:border-emerald/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald/10">
+    <div className="group relative bg-gray-800/50 rounded-lg overflow-hidden border border-gray-700 hover:border-emerald/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald/10">
       {/* Project Image */}
       {image && (
         <div className="relative h-48 bg-gray-900 overflow-hidden">
@@ -172,7 +172,7 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-16 sm:py-24 bg-night dark:bg-gray-900">
+    <section id="projects" className="py-16 sm:py-24 bg-night">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}

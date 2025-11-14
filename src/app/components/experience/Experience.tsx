@@ -21,7 +21,7 @@ function ExperienceItem({
   return (
     <div className="relative pl-8 pb-12 border-l-2 border-emerald/30 last:pb-0">
       {/* Timeline dot */}
-      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-emerald border-4 border-night dark:border-gray-900"></div>
+      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-emerald border-4 border-night"></div>
 
       <div className="space-y-3">
         <div>
@@ -87,10 +87,7 @@ export function Experience() {
   ];
 
   return (
-    <section
-      id="experience"
-      className="py-16 sm:py-24 bg-night dark:bg-gray-900"
-    >
+    <section id="experience" className="py-16 sm:py-24 bg-night">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}

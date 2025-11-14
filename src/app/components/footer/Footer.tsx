@@ -8,7 +8,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 dark:bg-black border-t border-gray-800">
+    <footer className="bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4 sm:px-6 py-12">
         <div className="max-w-4xl mx-auto">
           {/* Main Footer Content */}
@@ -33,16 +33,16 @@ export function Footer() {
                   Home
                 </a>
                 <a
-                  href="#skills"
-                  className="text-gray-400 hover:text-emerald transition-colors text-sm"
-                >
-                  Skills
-                </a>
-                <a
                   href="#experience"
                   className="text-gray-400 hover:text-emerald transition-colors text-sm"
                 >
                   Experience
+                </a>
+                <a
+                  href="#skills"
+                  className="text-gray-400 hover:text-emerald transition-colors text-sm"
+                >
+                  Skills
                 </a>
                 <a
                   href="#projects"
