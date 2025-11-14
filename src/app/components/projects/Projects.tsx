@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { Button } from "../ui/Button";
+import { TechIcon } from "../ui/TechIcon";
 
 interface ProjectCardProps {
   title: string;
@@ -71,12 +72,7 @@ function ProjectCard({
         {/* Technologies */}
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
-            <span
-              key={tech}
-              className="px-3 py-1 text-xs sm:text-sm bg-emerald/10 text-emerald rounded-full border border-emerald/30"
-            >
-              {tech}
-            </span>
+            <TechIcon key={tech} name={tech} />
           ))}
         </div>
       </div>
@@ -88,9 +84,8 @@ export function Projects() {
   const projects: ProjectCardProps[] = [
     {
       title: "ElGrupos",
-      description: `Chrome extension to organize and share browser tab groups with real-time sync and visual color-coded management.
-        Featuring import/export, and keyboard shortcuts for seamless user
-        productivity.`,
+      description:
+        "Chrome extension to organize and share browser tab groups with real-time sync and color-coded management. Featuring import/export, and keyboard shortcuts for seamless user productivity.",
       technologies: [
         "React",
         "TypeScript",
@@ -137,7 +132,7 @@ export function Projects() {
     {
       title: "GluDaily",
       description:
-        "GluDaily is an AI-powered mobile app that helps individuals with diabetes manage their condition by providing daily glucose level predictions, meal recommendations, and activity tracking using machine learning models.",
+        "AI-powered mobile app that helps individuals with diabetes manage their condition by providing daily glucose level predictions, meal recommendations, and activity tracking using machine learning models.",
       technologies: [
         "React Native",
         "TypeScript",
@@ -154,7 +149,7 @@ export function Projects() {
     {
       title: "Phaeton",
       description:
-        "An agentic AI chatbot designed to assist customer experience analysts in questioning customer reviews and gaining valuable insights and suggestions. By leveraging AI for review summarization and an agent-powered LLM for efficient filtering and analysis, this tool streamlines the review evaluation process.",
+        "An agentic AI chatbot designed to assist Customer Experience Analysts in questioning customer reviews and gaining valuable insights and suggestions.",
       technologies: [
         "Python",
         "Streamlit",
@@ -168,7 +163,7 @@ export function Projects() {
     {
       title: "YAML LSP",
       description:
-        "Language Server Protocol (LSP) implementation that transforms natural language into executable YAML workflows using Large Language Models (LLMs). This VS Code extension enables intelligent YAML authoring, validation, and execution with LLM-powered assistance.",
+        "VSCode Extension that leverages Language Server Protocol (LSP) implementation that transforms natural language into executable YAML workflows using Large Language Models (LLMs).",
       technologies: ["TypeScript", "VS Code API", "OpenRouter API"],
       githubUrl: "https://github.com/CUNYTechPrep/languageservices",
       liveUrl: "",
@@ -179,7 +174,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-16 sm:py-24 bg-night dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12 text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">

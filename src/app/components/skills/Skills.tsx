@@ -96,7 +96,7 @@ export function Skills() {
   return (
     <section id="skills" className="py-16 sm:py-24 bg-night dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 flex items-center gap-4">

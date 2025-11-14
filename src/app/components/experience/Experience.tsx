@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "../ui/Button";
 import { TiSocialLinkedin } from "react-icons/ti";
+import { TechIcon } from "../ui/TechIcon";
 
 interface ExperienceItemProps {
   title: string;
@@ -40,12 +41,7 @@ function ExperienceItem({
 
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
-            <span
-              key={tech}
-              className="px-3 py-1 text-xs sm:text-sm bg-emerald/10 text-emerald rounded-full border border-emerald/30"
-            >
-              {tech}
-            </span>
+            <TechIcon key={tech} name={tech} />
           ))}
         </div>
       </div>

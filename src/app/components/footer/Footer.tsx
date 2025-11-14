@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 dark:bg-black border-t border-gray-800">
       <div className="container mx-auto px-4 sm:px-6 py-12">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Main Footer Content */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Brand/About */}
