@@ -86,58 +86,92 @@ function ProjectCard({
 export function Projects() {
   const projects: ProjectCardProps[] = [
     {
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment integration. Built with modern web technologies for optimal performance.",
-      technologies: ["Next.js", "React", "Node.js", "PostgreSQL", "Stripe"],
-      githubUrl: "https://github.com/JNikolo",
-      liveUrl: "https://example.com",
-      image: "/projects/ecommerce.jpg",
+      title: "ElGrupos",
+      description: `Chrome extension to organize and share browser tab groups with real-time sync and visual color-coded management.
+        Featuring import/export, and keyboard shortcuts for seamless user
+        productivity.`,
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Chrome Extensions API",
+      ],
+      githubUrl: "https://github.com/JNikolo/ElGrupos",
+      liveUrl:
+        "https://chromewebstore.google.com/detail/elgrupos/flopalgfkalljojpemlpjcakbojeoodj",
+      image: "/projects/elgrupos.png",
     },
     {
-      title: "AI Chat Application",
+      title: "Aspire",
       description:
         "Real-time chat application powered by AI for intelligent responses. Features include message history, user presence, and natural language processing capabilities.",
-      technologies: ["React", "Flask", "Python", "OpenAI", "WebSocket"],
-      githubUrl: "https://github.com/JNikolo",
-      liveUrl: "https://example.com",
-      image: "/projects/ai-chat.jpg",
+      technologies: [
+        "React",
+        "Node.js",
+        "OpenAI API",
+        "WebSocket",
+        "Tailwind CSS",
+      ],
+      githubUrl: "https://github.com/JNikolo/Aspire",
+      liveUrl: "https://aspire-frontend-tau.vercel.app/",
+      image: "/projects/aspire.png",
     },
     {
-      title: "Task Management System",
+      title: "AIr",
       description:
-        "Collaborative task management tool with drag-and-drop functionality, team collaboration features, and real-time updates for improved productivity.",
-      technologies: ["TypeScript", "Next.js", "MongoDB", "Tailwind CSS"],
-      githubUrl: "https://github.com/JNikolo",
-      liveUrl: "https://example.com",
-      image: "/projects/task-manager.jpg",
+        "AI-powered travel companion app that provides personalized asthma-safe recommendations and real-time air quality monitoring for safer travel experiences.",
+      technologies: [
+        "React Native",
+        "Python",
+        "FastAPI",
+        "Scikit-learn",
+        "Open-Meteo API",
+        "Tamagui",
+      ],
+      githubUrl: "https://github.com/FreshPineapple-jpg/AIr",
+      liveUrl:
+        "https://devpost.com/software/air-your-personal-asthma-assistant",
+      image: "/projects/AIR.jpg",
     },
     {
-      title: "Weather Dashboard",
+      title: "GluDaily",
       description:
-        "Beautiful weather dashboard with forecasts, historical data, and interactive maps. Integrates with multiple weather APIs for accurate predictions.",
-      technologies: ["React", "Chart.js", "REST API", "CSS"],
-      githubUrl: "https://github.com/JNikolo",
-      liveUrl: "https://example.com",
-      image: "/projects/weather.jpg",
+        "GluDaily is an AI-powered mobile app that helps individuals with diabetes manage their condition by providing daily glucose level predictions, meal recommendations, and activity tracking using machine learning models.",
+      technologies: [
+        "React Native",
+        "TypeScript",
+        "Python",
+        "FastAPI",
+        "Langchain",
+        "OpenAI API",
+        "Pytorch",
+      ],
+      githubUrl: "https://github.com/sncr0/d1namo",
+      liveUrl: "https://devpost.com/software/gludaily",
+      image: "/projects/gludaily.jpg",
     },
     {
-      title: "Portfolio Generator",
+      title: "Phaeton",
       description:
-        "A tool that helps developers create stunning portfolio websites with customizable templates, themes, and deployment options.",
-      technologies: ["Next.js", "TypeScript", "Markdown", "Vercel"],
-      githubUrl: "https://github.com/JNikolo",
-      liveUrl: "https://example.com",
-      image: "/projects/portfolio-gen.jpg",
+        "An agentic AI chatbot designed to assist customer experience analysts in questioning customer reviews and gaining valuable insights and suggestions. By leveraging AI for review summarization and an agent-powered LLM for efficient filtering and analysis, this tool streamlines the review evaluation process.",
+      technologies: [
+        "Python",
+        "Streamlit",
+        "Gemini Developer API",
+        "Langchain",
+      ],
+      githubUrl: "https://github.com/JNikolo/luminoso-genai-hackathon2025",
+      liveUrl: "https://thehomies.streamlit.app/",
+      image: "/projects/phaeton.jpg",
     },
     {
-      title: "Fitness Tracker",
+      title: "YAML LSP",
       description:
-        "Mobile-responsive fitness tracking application with workout logs, progress charts, goal setting, and personalized workout recommendations.",
-      technologies: ["React Native", "Firebase", "Redux", "Chart.js"],
-      githubUrl: "https://github.com/JNikolo",
-      liveUrl: "https://example.com",
-      image: "/projects/fitness.jpg",
+        "Language Server Protocol (LSP) implementation that transforms natural language into executable YAML workflows using Large Language Models (LLMs). This VS Code extension enables intelligent YAML authoring, validation, and execution with LLM-powered assistance.",
+      technologies: ["TypeScript", "VS Code API", "OpenRouter API"],
+      githubUrl: "https://github.com/CUNYTechPrep/languageservices",
+      liveUrl: "",
+      image: "/projects/lsp.png",
     },
   ];
 
