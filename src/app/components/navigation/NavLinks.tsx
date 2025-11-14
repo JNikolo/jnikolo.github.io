@@ -15,6 +15,12 @@ export function NavLinks() {
         Home
       </button>
       <button
+        onClick={() => scrollToSection("about")}
+        className="hover:text-emerald transition-colors"
+      >
+        About
+      </button>
+      <button
         onClick={() => scrollToSection("experience")}
         className="hover:text-emerald transition-colors"
       >
@@ -25,6 +31,12 @@ export function NavLinks() {
         className="hover:text-emerald transition-colors"
       >
         Projects
+      </button>
+      <button
+        onClick={() => scrollToSection("contact")}
+        className="hover:text-emerald transition-colors"
+      >
+        Contact
       </button>
     </div>
   );

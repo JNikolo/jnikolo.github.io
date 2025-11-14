@@ -1,10 +1,13 @@
 "use client";
-import Globe from "./Globe";
-import { TiSocialLinkedin } from "react-icons/ti";
-import { TiSocialGithub } from "react-icons/ti";
-import { TiDocumentText } from "react-icons/ti";
-import { HiDownload, HiMail } from "react-icons/hi";
 import { Button } from "../ui/Button";
+import Globe from "./Globe";
+import {
+  FaInstagram,
+  FaGithub,
+  FaLinkedinIn,
+  FaCalendarAlt,
+  FaFileDownload,
+} from "react-icons/fa";
 
 export function Hero() {
   return (
@@ -20,67 +23,72 @@ export function Hero() {
               </span>
               , I&apos;m <span className="text-emerald">Jair Ruiz</span>
               <br />
-              Full Stack Developer
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-white mx-auto lg:mx-0 max-w-2xl">
-              I&apos;m a software developer with a focus on building web
-              applications, and scalable services. I specialize in frontend and
-              backend development with technologies like{" "}
+            <p className="text-base sm:text-lg lg:text-xl text-gray-300 mx-auto lg:mx-0 max-w-2xl">
+              Full-stack Developer |{" "}
               <span className="text-emerald drop-shadow-[0_0_10px_rgba(24,189,118,0.5)]">
-                React, Next.js, Node.js, and Flask
+                React, Next.js, Node.js, and Python
               </span>
-              . I also have a passion for AI technologies to solve real-world
-              problems. When I&apos;m not coding, I enjoy playing video games
-              and traveling.
+              <br />
+              <span className="font-bold">
+                Available for Freelance and Full-Time Opportunities
+              </span>
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <Button
-                variant="primary"
-                size="lg"
-                href="mailto:jruizm13@outlook.com"
-                icon={<HiMail />}
-                iconPosition="left"
-              >
-                Get In Touch
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                href="#"
-                icon={<HiDownload />}
-                iconPosition="right"
-              >
-                Download Resume
-              </Button>
+            {/* Condensed About */}
+            <div className="p-2 mx-auto lg:mx-0 max-w-2xl">
+              <p className="text-gray-300 leading-relaxed">
+                I&apos;m a passionate developer who loves building innovative
+                web applications and AI-powered solutions. Currently working as
+                a Software Engineer Consultant at Belle Lyric Music, I
+                specialize in creating scalable full-stack applications that
+                solve real-world problems, while drinking a lot of coffee ☕.
+                When I&apos;m not coding, you&apos;ll find me exploring the
+                latest AI technologies, or playing video games.
+              </p>
             </div>
 
-            <div className="flex flex-col items-center lg:items-start space-y-4 pt-8">
-              <p className="text-lg text-gray-400">Connect with me</p>
+            <div className="flex flex-col items-center lg:items-start space-y-4 pt-2">
               <div className="flex space-x-4 sm:space-x-6">
                 <a
                   href="https://www.linkedin.com/in/jair-ruiz-211889267/"
-                  className="text-4xl sm:text-5xl text-emerald hover:text-emerald/80 transition-colors"
+                  className="text-4xl sm:text-5xl text-[#126bc4] transition-colors"
                   aria-label="LinkedIn Profile"
                 >
-                  <TiSocialLinkedin />
+                  <FaLinkedinIn />
                 </a>
                 <a
                   href="https://github.com/JNikolo"
-                  className="text-4xl sm:text-5xl text-emerald hover:text-emerald/80 transition-colors"
+                  className="text-4xl sm:text-5xl transition-colors"
                   aria-label="GitHub Profile"
                 >
-                  <TiSocialGithub />
+                  <FaGithub />
                 </a>
-
                 <a
-                  href="#"
-                  className="text-4xl sm:text-5xl text-emerald hover:text-emerald/80 transition-colors"
-                  aria-label="Resume/CV"
+                  href="https://www.instagram.com/jair_ruiz03/"
+                  className="text-4xl sm:text-5xl text-[#fc09d1] transition-colors"
+                  aria-label="Instagram Profile"
                 >
-                  <TiDocumentText />
+                  <FaInstagram />
                 </a>
+                <Button
+                  variant="primary"
+                  size="md"
+                  href="mailto:jruizm13@outlook.com"
+                  icon={<FaCalendarAlt />}
+                  iconPosition="left"
+                >
+                  Schedule a Meeting
+                </Button>
+                <Button
+                  variant="secondary"
+                  size="md"
+                  href="/resume.pdf"
+                  icon={<FaFileDownload />}
+                  iconPosition="left"
+                >
+                  Download Resume
+                </Button>
               </div>
             </div>
           </div>
