@@ -15,10 +15,10 @@ export function NavLinks() {
         Home
       </button>
       <button
-        onClick={() => scrollToSection("about")}
+        onClick={() => scrollToSection("skills")}
         className="hover:text-emerald transition-colors"
       >
-        About
+        Skills
       </button>
       <button
         onClick={() => scrollToSection("experience")}

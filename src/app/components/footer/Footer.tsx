@@ -33,10 +33,10 @@ export function Footer() {
                   Home
                 </a>
                 <a
-                  href="#about"
+                  href="#skills"
                   className="text-gray-400 hover:text-emerald transition-colors text-sm"
                 >
-                  About
+                  Skills
                 </a>
                 <a
                   href="#experience"
